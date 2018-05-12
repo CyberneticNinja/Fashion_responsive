@@ -1,0 +1,267 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="jquery-1.11.0.min.js"></script>
+<title>responsive full screen</title>
+<style type="text/css">
+body {
+	font-family: 'PT Sans', sans-serif;
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	overflow-x: hidden;
+}
+.slide {
+	display: inline-block;
+	vertical-align: top;
+}
+.wrapper {
+	background-color: #fff;
+	color: #000;
+	width: 100%;
+}
+.overlay {
+	display: none;
+	color: white;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: #1E1E1E;
+	text-align: center;
+}
+#menuPointer {
+	display: inherit;
+	padding:7px;
+}
+
+#header	{
+	 height:50px;
+	 width:100%;
+	 background-color:#000;
+	 color:#fff;
+}
+
+#menu {
+	height: 12.500em;
+	width: 200px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+#menu ul {
+	padding: 5px 0;
+	list-style-type: none;
+	height: 12.500em;
+	width: 100%;
+	overflow: hidden;
+}
+#menu ul li {
+	height: 32px;
+}
+#menu ul li a {
+	height: 32px;
+	font-size: 28px;
+	text-align: left;
+	display: block;
+	color: #fff;
+	background-color: #1E1E1E;
+	text-decoration: none;
+	padding-top: 0;
+	padding-right: 0;
+	padding-bottom: 5px;
+	padding-left: 10px;
+}
+#menu ul li a:hover {
+	height: 32px;
+	font-size: 28px;
+	display: block;
+	padding: 0;
+	background-color: #fff;
+	color: #1E1E1E;
+	text-decoration: none;
+	padding-left: 10px;
+}
+#menu_navi	{
+	display: none;
+}
+
+.backhround_1	{
+	background-attachment: fixed;
+	background-image: url(images/test.jpg);
+	background-repeat: no-repeat;	
+	background-position: center; 
+}
+.backhround_2	{
+	background-attachment: fixed;
+	background-image: url(images/test2.jpg);
+	background-repeat: no-repeat;	
+	background-position: center; 
+}
+
+#UParrow	{
+	background-image: url(images/glyphicons_213_up_arrow.png);
+	background-repeat: no-repeat;
+	height: 20px;
+	width: 18px;	
+	float:right;
+	position:fixed;
+	z-index:3;
+}
+
+.column_1	{
+	width:715px;
+	background-color:#09F;
+	float:left;
+}
+
+.column_2	{
+	width:309px;
+	background-color:#903;
+	float:left;
+
+}
+.column_Alternate	{
+	display:block;
+	background-color:#09F;
+	
+}
+.wrapper1024Limit	{
+	display:none;
+	margin:auto;
+	width:1024px;
+	background-color:#C06;
+}
+.centeredImage	{
+    text-align:center;
+margin:auto;
+}
+@media only screen and (min-width: 1024px) {
+	#menuPointer {
+		display:none;
+	}
+	#menu_navi
+	{
+		float: right;
+		padding-right: 10px;
+		display: inline;
+		text-transform: uppercase;
+		text-decoration: none;
+		color: #FFF;
+		font-weight: bold;
+		padding-top: 15px;
+	}
+	#menu_navi:hover
+	{
+		float:right;
+		padding-right:10px;
+		display:inline;
+		text-transform: uppercase;
+		text-decoration:none;
+		color:#09F;
+	}
+	.wrapper1024Limit	{
+		display:block;
+		margin:auto;
+		width:1024px;
+		background-color:#C06;
+	}
+	.column_Alternate	{
+		display:none;
+		background-color:#09F;
+	}
+}
+
+</style>
+</head>
+<body>
+
+<div class="overlay">
+	<div id="menu">
+		<ul>
+			<li><a href="#">home</a></li>
+			<li><a href="#">about</a></li>
+			<li><a href="#">services</a></li>
+			<li><a href="#">contact</a></li>
+			<li><div id="close"><a href="#">close</a></div></li>
+		</ul>
+	</div>
+</div>
+<div id="header">
+<a href="#" id="menu_navi" >contact</a><a href="#" id="menu_navi" >portfolio</a><a href="#" id="menu_navi" >services</a><a href="#" id="menu_navi" >about</a><a href="#" id="menu_navi" >home</a><a href="#home"></a>
+	<img src="images/nav-icon.png" width="35" height="35" alt="mobile menu" id="menuPointer">
+</div>
+<div class="slide" style="background-color:#336;">
+  <div class="wrapper" style='margin-right: auto; margin-left: auto;text-align: left'> <br>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quasi ego id curem, quid ille aiat aut neget. Quippe, inquieta cum tam docuerim gradus istam rem non habere quam virtutem, in qua sit ipsum etíam beatum. Itaque haec cum illis est dissensio, cum Peripateticis nulla sane . </p>
+<!--<div id="UParrow"></div>-->
+    <ul>
+    
+      <li>Certe nihil nisi quod possit ipsum propter se iure laudari.</li>
+      <li>Nunc dicam de voluptate, nihil scilicet novi, ea tamen, quae te ipsum probaturum esse confidam.</li>
+    </ul>
+  </div>
+</div>
+<div class="slide" style="background-color:#FC6;">
+	<div class="backhround_1"></div>
+    
+</div>
+<div class="slide" style="background-color:#FFF">
+		<div class="column_Alternate">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quodsi ipsam honestatem undique pertectam atque absolutam. Ratio quidem vestra sic cogit. Memini vero, inquam; </p>
+
+<p>Duo Reges: constructio interrete. Quod cum dixissent, ille contra. Sed ego in hoc resisto; Quid, de quo nulla dissensio est? Istam voluptatem, inquit, Epicurus ignorat? Quam nemo umquam voluptatem appellavit, appellat; </p>
+        </div>
+		<div class="wrapper1024Limit">
+        	<div class="column_1"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quae duo sunt, unum facit. Sed hoc sane concedamus. In schola desinis. Bonum liberi: misera orbitas. Esse enim, nisi eris, non potes. Duo Reges: constructio interrete. Hic ambiguo ludimur. Ut id aliis narrare gestiant? </p>
+
+<p>Frater et T. De illis, cum volemus. Ut aliquid scire se gaudeant? Est, ut dicis, inquit; Non potes, nisi retexueris illa. Nihil opus est exemplis hoc facere longius. </p>
+
+<p>Optime, inquam. Immo alio genere; Quo tandem modo? Erat enim Polemonis. </p></div>
+            <div class="column_2"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quodsi ipsam honestatem undique pertectam atque absolutam. Ratio quidem vestra sic cogit. Memini vero, inquam; </p>
+
+<p>Duo Reges: constructio interrete. Quod cum dixissent, ille contra. Sed ego in hoc resisto; Quid, de quo nulla dissensio est? Istam voluptatem, inquit, Epicurus ignorat? Quam nemo umquam voluptatem appellavit, appellat; </p>
+
+</div>
+        </div>
+</div>
+
+<div class="slide" style="background-color:#FCC;"> 
+	<div class="backhround_2"></div>
+</div>
+
+<div class="slide" style="background-color:#3FF;" >
+
+ </div>
+</body>
+<script>
+$(document).ready(function(e) {
+	$('.backhround_1').height($(window).height());
+	$('.backhround_1').width($(window).width());
+	$('.backhround_2').height($(window).height());
+	$('.backhround_2').width($(window).width());
+	$('.slide').height($(window).height());
+	$('.slide').width($(window).width());
+	$('.wrapper').width($(window).width()*.95);
+	$('#menu').css('width',$(window).width());
+});
+$('#menuPointer').click(function()	{
+	$('.overlay').css('display','inherit');
+});
+$('#close').click(function() {
+	$('.overlay').css('display','none');
+});
+$(window).resize(function() {
+	$('.backhround_1').height($(window).height());
+	$('.backhround_1').width($(window).width());
+	$('.slide').height($(window).height());
+	$('.slide').width($(window).width());
+	$('.wrapper').width($(window).width()*.95);
+	$('#menu').css('width',$(window).width());
+})
+</script>
+</html>

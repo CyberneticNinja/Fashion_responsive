@@ -1,0 +1,269 @@
+<!doctype html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet">
+<meta name="viewport" content="width=device-width", initial-scale=1">
+<meta charset="utf-8">
+<title>Absolute Design Studio</title>
+<style type="text/css">
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Ubuntu', sans-serif;
+	background-color: #333;
+	color: #FFF;
+}
+#head{
+	text-align: center;	
+}
+header{
+	padding: 10px;
+}
+.sidenav {
+	
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #FFFFFF;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #818181;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+.line_break
+{
+	width: 75%;
+	border-top-width: medium;
+	border-top-style: solid;
+	border-top-color: #F7F7F7;
+	border-right-color: #F7F7F7;
+	border-bottom-color: #F7F7F7;
+	border-left-color: #F7F7F7;
+	padding-right: 12.5%;
+	padding-left: 12.5%;
+}
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+.content
+{
+	padding:30px;
+	color:white;
+}
+.content h1, h2, h3, h4, h5, h6
+{
+	color:red;
+}
+
+#menuicon
+{
+	padding-left:20px;
+	padding-top:20px;
+	float:left;
+	color:red;
+	font-size:0.625em;
+}
+
+#menuheader
+{
+	float:right;
+	font-size:0.750em;
+}
+
+section {
+	height: 100vh;
+}
+
+#screen1 {
+	background-image: url(images/jesus-kiteque-224069.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+#screen1 p{
+	padding-top:50%;
+	font-size:2.188em;
+	text-align:center;
+	color:black;
+}
+@media only screen and (min-width: 768px) {
+	#menuicon
+	{
+		float:left;
+		color:red;
+		font-size:0.625em;
+	}
+
+	#menuheader
+	{
+		float:right;
+		font-size:0.750em;
+	}
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.contact
+{
+	width: 50%;
+	floar: left;
+}
+.client
+{
+	width: 25%;
+	float: left;
+	text-align: center;
+}
+.contactUs
+{
+	width: 33.33%;
+	float: left;
+	text-align: center;
+}
+.clearfix {
+    clear: left;
+}
+</style>
+</head>
+
+<body>
+	<section id="screen1">
+		<span style="font-size:30px;cursor:pointer" onclick="openNav()"><span id="menuicon"> <strong>MENU</strong></span></span>
+		<p><strong>Absolute Design Studios</strong></p>
+	</section>
+	<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">Home</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Design</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
+<br/>
+<br/>
+<br/>
+
+<div class="content">
+<h1>Vos autem cum perspicuis dubia debeatis illustrare, dubiis perspicua conamini tollere.</h1>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Omnia contraria, quos etiam insanos esse vultis. Summum a vobis bonum voluptas dicitur. Habes, inquam, Cato, formam eorum, de quibus loquor, philosophorum. Verum hoc idem saepe faciamus. Equidem etiam Epicurum, in physicis quidem, Democriteum puto. Duo Reges: constructio interrete. </p>
+
+<p>Aliter enim nosmet ipsos nosse non possumus. Aliter homines, aliter philosophos loqui putas oportere? Si id dicis, vicimus. Nos paucis ad haec additis finem faciamus aliquando; </p>
+
+<ol>
+	<li>Sint modo partes vitae beatae.</li>
+	<li>Si longus, levis dictata sunt.</li>
+	<li>Isto modo ne improbos quidem, si essent boni viri.</li>
+	<li>Iam id ipsum absurdum, maximum malum neglegi.</li>
+	<li>Tria genera cupiditatum, naturales et necessariae, naturales et non necessariae, nec naturales nec necessariae.</li>
+</ol>
+<br/>
+<h1>Iam enim adesse poterit.</h1>
+
+<p>Age, inquies, ista parva sunt. Ubi ut eam caperet aut quando? Sed in rebus apertissimis nimium longi sumus. Honesta oratio, Socratica, Platonis etiam. Et quidem, inquit, vehementer errat; Quid enim de amicitia statueris utilitatis causa expetenda vides. Scientiam pollicentur, quam non erat mirum sapientiae cupido patria esse cariorem. Quod autem ratione actum est, id officium appellamus. </p>
+<br/>
+<h6>Animum autem reliquis rebus ita perfecit, ut corpus;</h6>
+
+<p>Vestri haec verecundius, illi fortasse constantius. Traditur, inquit, ab Epicuro ratio neglegendi doloris. Nec lapathi suavitatem acupenseri Galloni Laelius anteponebat, sed suavitatem ipsam neglegebat; Animi enim quoque dolores percipiet omnibus partibus maiores quam corporis. Traditur, inquit, ab Epicuro ratio neglegendi doloris. Itaque nostrum est-quod nostrum dico, artis est-ad ea principia, quae accepimus. </p>
+<br/>
+<h2>Aliter enim explicari, quod quaeritur, non potest.</h2>
+
+<p>Aliter enim explicari, quod quaeritur, non potest. Vitae autem degendae ratio maxime quidem illis placuit quieta. Qui enim voluptatem ipsam contemnunt, iis licet dicere se acupenserem maenae non anteponere. Sed eum qui audiebant, quoad poterant, defendebant sententiam suam. Cur deinde Metrodori liberos commendas? Quae contraria sunt his, malane? Pauca mutat vel plura sane; Hic ego: Pomponius quidem, inquam, noster iocari videtur, et fortasse suo iure. Non risu potius quam oratione eiciendum? Conferam avum tuum Drusum cum C. </p>
+<br/>
+<h4>Profectus in exilium Tubulus statim nec respondere ausus;</h4>
+
+<p>An hoc usque quaque, aliter in vita? Sed in rebus apertissimis nimium longi sumus. Ad eos igitur converte te, quaeso. Sed ad bona praeterita redeamus. Ergo, si semel tristior effectus est, hilara vita amissa est? </p>
+<br/>
+<h5>Multoque hoc melius nos veriusque quam Stoici.</h5>
+
+<p>Quae fere omnia appellantur uno ingenii nomine, easque virtutes qui habent, ingeniosi vocantur. Qua tu etiam inprudens utebare non numquam. Qui est in parvis malis. An ea, quae per vinitorem antea consequebatur, per se ipsa curabit? </p>
+<br/>
+<h3>Nos commodius agimus.</h3>
+
+<p>Equidem, sed audistine modo de Carneade? Istam voluptatem perpetuam quis potest praestare sapienti? Et harum quidem rerum facilis est et expedita distinctio. Certe, nisi voluptatem tanti aestimaretis. Qui est in parvis malis. Videamus igitur sententias eorum, tum ad verba redeamus. Urgent tamen et nihil remittunt. Nulla profecto est, quin suam vim retineat a primo ad extremum. </p>
+
+<p>Ut optime, secundum naturam affectum esse possit. Hunc vos beatum; Non minor, inquit, voluptas percipitur ex vilissimis rebus quam ex pretiosissimis. Sed mehercule pergrata mihi oratio tua. Itaque his sapiens semper vacabit. </p>
+
+</div>
+<br/>
+<br/>
+<div class="line_break">
+</div>
+<br/>
+<br/>
+<span class="client"><img src="images/client.png" width="80" height="80" alt="client"></span>
+<span class="client"><img src="images/client2.png" width="80" height="80" alt="client"></span>
+<span class="client"><img src="images/client1.png" width="80" height="80" alt="client"></span>
+<span class="client"><img src="images/client3.png" width="80" height="85" alt="client"></span>
+<br />
+<div class="clearfix"></div>
+<span class="client"><img src="images/client4.png" width="80" height="85" alt="client"></span>
+<span class="client"><img src="images/client5.png" width="80" height="76" alt="client"></span>
+<span class="client"><img src="images/client6.png" width="80" height="80" alt="client"></span>
+<div class="clearfix"></div>
+<br/>
+<br/>
+<br/>
+<div class="line_break">
+</div>
+<br/>
+<br/>
+<span class="contactUs"><img src="images/Facebook.png" width="50%" alt="contact_facebook"><p>Facebook</p></span>
+<span class="contactUs"><img src="images/Google+.png" width="50%" alt="contact_google"><p> Google</p></span>
+<span class="contactUs"><img src="images/Instagram.png" width="50%" alt="contact_Instagram"><p>Instagram</p></span>
+<div class="clearfix"></div>
+<span class="contactUs"><img src="images/Pinterest.png" width="50%" alt="contact_Pinterest"><p>Pinterest</p></span>
+<span class="contactUs"><img src="images/Snapchat.png" width="50%" alt="contact_Snapchat"><p>Snapchat</p></span>
+<span class="contactUs"><img src="images/Twitter.png" width="50%" alt="contact_Twitter"><p>Twitter</p></span>
+<div class="clearfix"></div>
+<br/>
+<br/>
+<br/>
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.body.style.backgroundColor = "white";
+}
+</script>
+</body>
+</html>

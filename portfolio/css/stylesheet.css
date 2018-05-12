@@ -1,0 +1,114 @@
+section {
+	height: 100vh;
+}
+/* Screens Settings */
+#screen
+{
+	background:#08080F;
+	color:#FFF;
+}
+#screen2
+{
+	background:#253241;
+	color:#FFF;
+}
+#screen3
+{
+	background:#F0F1F1;
+}
+/*
+#screen1 {
+	background:#08080F;
+	
+	background: url(../img/Death_to_Stock_Photography_NYC_Skyline_2resize.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	
+}
+#screen1 p {
+	padding-top: 200px;
+}
+
+#screen2 {
+	background: #66C;
+}
+
+#screen3 {
+	background: #000;
+}
+#screen4 {
+	background: #e1793d;
+}
+*/
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+header {
+	height: 70px;
+	width: 100%;
+	background-color: #72533B;
+	position: fixed;
+	font-size: 36px;
+	color: #FFF;
+}
+.logo {
+	text-align: left;
+	margin: 10px;
+	text-transform: uppercase;
+}
+.alignMiddle {
+	text-align: center;
+}
+.textwrapper {
+	padding: 20px;
+	font-size:100%;
+}
+ @media only screen and (max-width: 1365px) {
+.logo {
+	text-align: center;
+	margin: 10px;
+	text-transform: uppercase;
+}
+header {
+	height: 120px;
+	width: 100%;
+	background-color: #72533B;
+	position: fixed;
+	font-size: 36px;
+	color: #FFF;
+}
+body header select {
+	width: 50%;
+	margin-left: 25%;
+	height: 25px;
+	border-radius: 10px;
+	font-size: 16px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.section1_top {
+	height: 120px;
+	width: 100%;
+}
+.authorImg
+{
+	margin-left:12%;
+}
+}
+ @media only screen and (min-width: 1366px) {
+body header select {
+	display: none;
+}
+.section1_top {
+	height: 70px;
+	width: 100%;
+}
+.authorImg
+{
+	
+}
+}
